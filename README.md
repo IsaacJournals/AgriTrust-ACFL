@@ -1,6 +1,6 @@
 # AgriTrust-ACFL — Code, Execution Record and Results
 
-Reproducibility package for the manuscript **"AgriTrust-ACFL: Adaptive Client-Trust Federated Learning with Staleness-Aware Buffered Aggregation for Byzantine-Resilient Agricultural IoT Intrusion Detection"** *(title to be finalised)*.
+Reproducibility package for the manuscript **"AgriTrust-ACFL: Adaptive Client-Trust Federated Learning with Staleness-Aware Buffered Aggregation for Byzantine-Resilient Agricultural IoT Intrusion Detection"** (R. Augustian Isaac, submitted to the *Journal of Information Security and Applications*).
 
 AgriTrust-ACFL is a trust-calibrated federated intrusion-detection aggregator for agricultural IoT. Each round it scores every farm gateway's own model update (directional consensus, norm plausibility, near-duplicate similarity, communication reliability and trust memory), down-weights stale updates, clips extreme updates, and quarantines clients below a drift-normalised, validation-calibrated trust threshold, with bounded exclusion so that no honest client is locked out.
 
@@ -167,7 +167,7 @@ Copy `results/` (including `checkpoints/e0cc45b388bf/`) to `MyDrive/AgriTrust_Re
 ---
 
 ## 8. Citation, licence, contact
-- **Citation:** *[manuscript reference and DOI, to be added on acceptance]*
-- **Archive:** *[Zenodo DOI]* | **Repository:** *[GitHub URL]*
-- **Licence:** code *[e.g. MIT]*; results tables and figures *[e.g. CC BY 4.0]*. The datasets remain under their original providers' terms.
-- **Contact:** *[corresponding author, e-mail]*
+- **Manuscript:** R. Augustian Isaac, "AgriTrust-ACFL: Adaptive Client-Trust Federated Learning with Staleness-Aware Buffered Aggregation for Byzantine-Resilient Agricultural IoT Intrusion Detection", submitted to the *Journal of Information Security and Applications* (Elsevier), 2026. The full reference and DOI will be added on publication.
+- **Repository:** https://github.com/IsaacJournals/AgriTrust-ACFL
+- **Licence:** MIT License (see `LICENSE`) for the code and the results in this repository. The CIC-IoT-2023 and UNSW-NB15 datasets are not redistributed and remain under their original providers' terms.
+- **Contact:** Dr. R. Augustian Isaac, Department of Artificial Intelligence and Machine Learning, Saveetha Engineering College, Chennai, India. E-mail: augustianisaacr@saveetha.ac.in
