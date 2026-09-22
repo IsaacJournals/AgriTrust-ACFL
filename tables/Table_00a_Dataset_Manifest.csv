@@ -1,0 +1,3 @@
+Role,Dataset,OfficialSource,LocalFiles,RowsLoaded,Use
+Primary,CIC-IoT-2023,https://www.unb.ca/cic/datasets/iotdataset-2023.html,169,180000,Main AgriTrust training/validation/testing and federated stress experiments
+External,UNSW-NB15,https://research.unsw.edu.au/projects/unsw-nb15-dataset,2,0,Separate external validation; schema is re-fitted and never pooled with CIC-IoT-2023

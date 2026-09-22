@@ -1,0 +1,35 @@
+ManuscriptSection,EvidenceInstruction
+Title,Frozen AgriTrust-ACFL title and method identity.
+Abstract,"Use only executed headline results from Tables 06, 09-13, 17b, 18, 19, 21 and the claim gate."
+Keywords,Agricultural IoT; federated learning; intrusion detection; Byzantine robustness; client trust; non-IID; staleness.
+Highlights,Derive 4-5 evidence-backed points only after the final run.
+Introduction,Problem: benign heterogeneity/staleness can resemble malicious updates.
+Related Work,"Compare FedTrans-AgriIDS, P4P, FedDBC, TrustFed-IDS, smart-city trust FL-IDS, FLEX-IDS."
+Research Gap,Use base-paper gap notes plus trust-calibration / false-quarantine positioning.
+Threat Model,Honest server; benign/stale/unavailable/resource-limited/Byzantine clients; secure-aggregation limitation.
+System Model,"Farm gateways, local detector, buffered staleness-aware update ingestion, trust engine."
+Mathematical Formulation,"Own-base update delta; direction/norm/reliability/history trust; EMA; freshness decay; own-delta clipping; drift-normalised admission gate tau_cal*min(1,median_t/median_cal) with quorum."
+Datasets,Tables 00a/00b (file manifest + hashes)/01b (label harmonization) + official CIC-IoT-2023 and UNSW-NB15 source pages.
+Leakage Control,Exact-duplicate removal before splitting; cross-split identical-feature audit (Table 00); training-only feature selection/imputation/scaling; integrity gate Table 00c.
+Non-IID Federation,Tables 03b/04 and client heatmap.
+Training / Validation / Testing,Table_00 split summary and configuration manifest.
+Baselines,"FedAvg, FedProx, Async-Stale, CoordMedian, TrimmedMean, MultiKrum, RawTrust, AgriTrust."
+Main Results,Tables 06/06b-06f; Figures 03-06c.
+Trust Calibration,"Tables 05/05b/08/08b; protocol-matched warm-up, hybrid gate, clean-run false quarantine."
+Poisoning Robustness,Tables 09-11; Figures 07-08.
+Adaptive Adversary,adaptive_slow_drift rows in Tables 09-11.
+False Quarantine,Table 12; Figure 09.
+Connectivity / Staleness,Table 13; Figure 10.
+Fairness,Tables 14-15; Figures 11-12.
+Sensitivity,Table 16b; Figure 13b_tau and Figure 13b_lambda.
+Ablation,Table 16; Figure 13.
+Statistics,"Tables 17,17b,17c,18; independent seeds only; clean and poisoning scenarios."
+Computation / Communication,Table 19; Figures 14-15.
+External Validation,"Table 21; Figure 16 — federated replication on UNSW-NB15 (single seed, descriptive)."
+Discussion,"State where AgriTrust helps, where it does not, and trade-offs."
+Limitations,No formal DP; no secure aggregation; no physical gateway measurements; buffered not true event-driven async.
+Conclusion,Only claims marked Eligible=True in Table 20.
+Data Availability,CIC-IoT-2023 UNB CIC official page; UNSW-NB15 official UNSW page.
+Code Availability,Notebook + output ZIP after execution.
+Ethics / Conflict / CRediT,Complete from authorship record; do not fabricate.
+References,Finalize with submission-time literature verification; include dataset papers and recent trust-FL comparators.

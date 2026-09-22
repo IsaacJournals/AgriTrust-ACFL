@@ -1,0 +1,13 @@
+Check,Passed,Severity,Detail
+Real CIC-IoT-2023 data loaded (not synthetic),True,OK,REAL: CIC-IoT-2023; 169 of 169 CSV files contributed rows; source: Kaggle convenience mirror madhavmalhotra/unb-cic-iot-dataset (verify against official files).
+Number of primary CSV files found,True,OK,169 file(s) found
+Every found file contributed rows (>= 95%),True,OK,169 of 169 files contributed rows; statuses: {'ok': 169}
+All contributing files share one column schema,True,OK,1 distinct column counts across files
+Label column found,True,OK,label column = 'label'
+Benign class present after harmonization,True,OK,"classes = ['Benign', 'DDoS', 'DoS', 'Mirai', 'Recon', 'Spoofing']"
+At least 5 harmonized classes,True,OK,6 classes
+'Other' (unmapped/rare) class share <= 5%,True,OK,0.00% of rows
+At least 20 numeric features retained,True,OK,39 features
+Smallest class has >= 50 training rows,True,OK,min train rows per class = 791
+Test rows identical to a training row (after dedup) <= 1%,True,OK,0 of 35975 test rows (0.00%); exact duplicates removed = 0
+Primary source is official/local (not a mirror),False,WARN,Kaggle convenience mirror madhavmalhotra/unb-cic-iot-dataset (verify against official files)

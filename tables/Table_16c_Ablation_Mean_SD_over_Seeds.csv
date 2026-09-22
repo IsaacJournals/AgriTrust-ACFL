@@ -1,0 +1,46 @@
+Method,Scenario,mean,std,count
+A0 Staleness-weighted only,clean,0.5263580527554704,0.0754091553211642,3
+A1 +Direction,clean,0.5328599813631358,0.07415331222568788,3
+A2 +Norm,clean,0.5276829567675302,0.07131214877152885,3
+A3 +Reliability+History,clean,0.5285636359964045,0.06886374809637813,3
+A4 +Clipping,clean,0.5285636359964045,0.06886374809637813,3
+A5 +Similarity (duplicate-aware consensus),clean,0.5285636359964045,0.06886374809637813,3
+A6 +Gate (no probation),clean,0.5185196044531023,0.056808251452202335,3
+"A7 +Probation (full AgriTrust, symmetric memory)",clean,0.5185196044531023,0.056808251452202335,3
+"A8 Full AgriTrust, asymmetric memory",clean,0.5236056264415876,0.05726402962249798,3
+A0 Staleness-weighted only,sign_flip@0.3,0.07203590357489036,0.08311586792373414,3
+A1 +Direction,sign_flip@0.3,0.08041038006588384,0.081996909691262,3
+A2 +Norm,sign_flip@0.3,0.11504688101585608,0.08662348918369063,3
+A3 +Reliability+History,sign_flip@0.3,0.0767360093880217,0.08335348958031405,3
+A4 +Clipping,sign_flip@0.3,0.37647021781074513,0.11654990778371105,3
+A5 +Similarity (duplicate-aware consensus),sign_flip@0.3,0.37647021781074513,0.11654990778371105,3
+A6 +Gate (no probation),sign_flip@0.3,0.45313756951936995,0.02277443084251033,3
+"A7 +Probation (full AgriTrust, symmetric memory)",sign_flip@0.3,0.4509791615653584,0.01916134403852841,3
+"A8 Full AgriTrust, asymmetric memory",sign_flip@0.3,0.45819260230810444,0.024044887559202015,3
+A0 Staleness-weighted only,model_replace@0.3,0.36029004453234226,0.17514558180142495,3
+A1 +Direction,model_replace@0.3,0.3973422998221361,0.16807948686211807,3
+A2 +Norm,model_replace@0.3,0.3655995860831324,0.1859576196056613,3
+A3 +Reliability+History,model_replace@0.3,0.41413845094415586,0.17755339323377256,3
+A4 +Clipping,model_replace@0.3,0.5074184160904035,0.08914000521670318,3
+A5 +Similarity (duplicate-aware consensus),model_replace@0.3,0.5074184160904035,0.08914000521670318,3
+A6 +Gate (no probation),model_replace@0.3,0.6013118502042977,0.028207464869758468,3
+"A7 +Probation (full AgriTrust, symmetric memory)",model_replace@0.3,0.5820468839587857,0.04624070461584231,3
+"A8 Full AgriTrust, asymmetric memory",model_replace@0.3,0.5267866611892438,0.11336446410127364,3
+A0 Staleness-weighted only,collusive_scale@0.3,0.5104358187730426,0.0683464856460855,3
+A1 +Direction,collusive_scale@0.3,0.5225215615383649,0.10003894653870049,3
+A2 +Norm,collusive_scale@0.3,0.5228164602459825,0.08203747864185072,3
+A3 +Reliability+History,collusive_scale@0.3,0.5194107660120008,0.07741740725462341,3
+A4 +Clipping,collusive_scale@0.3,0.5343997243938718,0.09928701916961769,3
+A5 +Similarity (duplicate-aware consensus),collusive_scale@0.3,0.5004191694109701,0.06678231314419686,3
+A6 +Gate (no probation),collusive_scale@0.3,0.4794236884743665,0.0390895925461895,3
+"A7 +Probation (full AgriTrust, symmetric memory)",collusive_scale@0.3,0.47958583648399705,0.03892319290287868,3
+"A8 Full AgriTrust, asymmetric memory",collusive_scale@0.3,0.5265138197745484,0.10020724786305624,3
+A0 Staleness-weighted only,adaptive_slow_drift@0.3,0.5715742303783049,0.017405661587256975,3
+A1 +Direction,adaptive_slow_drift@0.3,0.5956921206207101,0.018848242534962527,3
+A2 +Norm,adaptive_slow_drift@0.3,0.5993345247123032,0.030815876664217114,3
+A3 +Reliability+History,adaptive_slow_drift@0.3,0.5947215208413374,0.030130956638488696,3
+A4 +Clipping,adaptive_slow_drift@0.3,0.5947549243098814,0.030068077770702514,3
+A5 +Similarity (duplicate-aware consensus),adaptive_slow_drift@0.3,0.5700839476735139,0.02813431599767854,3
+A6 +Gate (no probation),adaptive_slow_drift@0.3,0.568542245478059,0.031647378464698145,3
+"A7 +Probation (full AgriTrust, symmetric memory)",adaptive_slow_drift@0.3,0.5666670414463696,0.03237222647067212,3
+"A8 Full AgriTrust, asymmetric memory",adaptive_slow_drift@0.3,0.5820315100889332,0.005094555968791151,3

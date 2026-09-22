@@ -1,0 +1,10 @@
+Stage,PlannedRounds,EstimatedHours,AlreadyCheckpointed
+warm starts + poisoning + cold start,1925,,False
+benign false-quarantine audit,300,,False
+connectivity grid,800,,False
+dominant-client scenario,330,,False
+ablation,1080,,False
+sensitivity,276,,False
+multi-seed (clean + poisoning),6840,,False
+UNSW-NB15 federated replication,454,,False
+TOTAL (remaining stages),12005,0.0,False

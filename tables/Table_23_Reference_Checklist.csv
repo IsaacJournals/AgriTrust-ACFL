@@ -1,0 +1,11 @@
+ReferenceAnchor,DOI_or_OfficialURL
+FedTrans-AgriIDS base paper,10.1007/s44163-026-01694-2
+CIC-IoT-2023 dataset,https://www.unb.ca/cic/datasets/iotdataset-2023.html
+UNSW-NB15 dataset,https://research.unsw.edu.au/projects/unsw-nb15-dataset
+P4P anti-poisoning FL-IDS,10.1016/j.jnca.2026.104502
+FedDBC collusion-resistant FIDS,10.1016/j.comnet.2026.112497
+TrustFed-IDS,10.1016/j.comnet.2026.112430
+Trust-aware smart-city FL-IDS,10.1016/j.comnet.2026.112616
+FLEX-IDS,10.1016/j.compeleceng.2025.110827
+"ALIE attack: Baruch, Baruch & Goldberg, A Little Is Enough: Circumventing Defenses for Distributed Learning, NeurIPS 2019",verify DOI/proceedings link at submission
+"FoolsGold: Fung, Yoon & Beschastnikh, The Limitations of Federated Learning in Sybil Settings, RAID 2020",verify DOI/proceedings link at submission

@@ -1,0 +1,14 @@
+Diagnostic,Status,Detail
+AgriTrust clean Macro-F1 within 0.03 of Async-Stale (same buffered protocol),PASS,"AgriTrust=0.6109, Async-Stale=0.5621, best=TrimmedMean 0.6676"
+AgriTrust clean-run benign false quarantine <= 10%,PASS,0.067 (Table_08b)
+tau sweep actually binds (admitted fraction varies across tau under the absolute gate),PASS,"admitted fractions: [1.0, 0.841, 0.841, 0.614, 0.591, 0.591, 0.591, 0.591]"
+Connectivity: AgriTrust never more than 0.05 below Async-Stale in any dropout x staleness cell,CHECK,largest Async-Stale minus AgriTrust gap = 0.1095 (Table_13)
+"Main/connectivity/poisoning/multi-seed AgriTrust runs share one configuration (gate, components, lambda, tau, trust rule)",PASS,"gate=['hybrid'], lambda=[np.float64(0.45)], tau=[np.float64(0.608)], rule=['symmetric']"
+Calibration rests on >= 50 warm-up client-rounds after burn-in,PASS,"64 client-rounds (10 rounds, 2 burn-in excluded)"
+"No honest client locked out (benign quarantine streak <= 3 participations, clean run)",PASS,longest benign quarantine streak = 3.0 participations (Table_08b)
+"lambda not selected at an arbitrary edge of its grid (lambda = 0, no decay, is a natural floor)",PASS,"selected 0.45 from [0.0, 0.1, 0.25, 0.45, 0.75, 1.0, 1.5] (edge = optimum may lie outside the grid; report it)"
+Slow-drift (ALIE) adversary is effective: damage to undefended FedAvg/Async-Stale >= 0.02 Macro-F1 at the highest ratio,CHECK,mean paired damage vs own no-attack continuation = -0.2010 (Table_09 AttackDamage)
+Colluding ALIE copies do not turn the gate against honest clients (benign false quarantine <= 15% at every ratio),PASS,max benign false quarantine under ALIE = 0.069 (v2.4: 0.739 at 40%)
+Honest updates stay below the similarity threshold (warm-up 99th percentile < SIM_START),PASS,honest max-cosine p99 = 0.8761; SIM_START = 0.99
+Attacks start from non-degenerate checkpoints (>= 5 of 7 methods with warm validation Macro-F1 >= 0.40),PASS,FedAvg=0.480; CoordMedian=0.588; TrimmedMean=0.588; MultiKrum=0.506; Async-Stale=0.521; RawTrust=0.507; AgriTrust-ACFL=0.561
+No client holds more than 25% of the training rows (capped split),PASS,largest client = 26306 rows (share 0.2500); cap = 26306 rows (Table_03)

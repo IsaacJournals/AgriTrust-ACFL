@@ -1,0 +1,21 @@
+Claim_or_Check,Eligible,Evidence,Boundary
+Real verified primary benchmark used,True,"Table_00a, Table_00",Synthetic smoke is never manuscript evidence.
+Leakage-safe train/validation/calibration/test separation,True,Table_00 / preprocessing logs,Preprocessing must be fitted on training rows only.
+Non-IID 10-client federation,True,Table_04_NonIID_Client_Distribution.csv,
+Staleness/dropout robustness,True,Table_13_Connectivity_Robustness.csv,"Controlled connectivity stress, not natural field telemetry."
+Multiple Byzantine attack types/ratios,True,Tables_09-11,
+Adaptive adversary evaluated,True,Tables_09-11,"Adaptive slow-drift is a controlled proxy, not an exhaustive adaptive threat model."
+Benign false-quarantine audit,True,Table_12_Benign_Noise_Staleness_Trust_Audit.csv,
+Tau/lambda sensitivity analysis,True,Table_16b + Figure_13b,
+Trust-component ablation,True,Table_16_Trust_Component_Ablation.csv,
+Independent multi-seed clean inference (>=10 seeds; Holm-corrected Wilcoxon needs >=9 for 7 comparisons),True,"Tables_17,17b,18 (Scenario=clean)",Client rows are not inferential units.
+Independent multi-seed POISONING inference (>=10 seeds; Holm-corrected Wilcoxon),True,"Tables_17c,17b,18 (poisoning scenarios)",Headline robustness claims require this row to be Eligible.
+Clean-run benign false quarantine reported (AgriTrust = 0.067),True,Table_08b_Clean_Run_Admission_Audit,Report this value alongside every robustness claim; do not claim low false quarantine if it is high.
+Primary data from official/local files (not a convenience mirror),False,"Table_00a, Table_00b","If a mirror was used, state it and verify file hashes/labels against the official release."
+Exact duplicates removed before splitting; cross-split identical-feature rows audited,True,"Table_00 (ExactDuplicatesRemoved, TestRowsWithIdenticalTrainFeatures)",Report both counts in the leakage-control section.
+Independent external UNSW-NB15 federated replication (single seed; descriptive only),True,"Table_21, Figure_16",Separate preprocessing and re-calibrated trust; features never pooled with CIC-IoT-2023; no inferential claims from one seed.
+Communication/runtime evidence,True,Table_19,
+Formal differential-privacy guarantee,False,Not implemented,"Do not infer ε,δ privacy from Gaussian update-noise experiments."
+Physical Raspberry Pi / ESP32 / farm-gateway validation,False,Not implemented,Do not claim physical-edge deployment without measured hardware evidence.
+Secure aggregation compatibility,False,Not implemented,Per-client trust scoring observes individual updates; this conflicts with standard secure aggregation.
+True event-driven asynchronous FL,False,Not implemented,Describe implementation as staleness-aware buffered federation unless a true event queue is added.

@@ -1,0 +1,17 @@
+RUN ID: 8609ac242251
+DATA: REAL: CIC-IoT-2023; 169 of 169 CSV files contributed rows; source: Kaggle convenience mirror madhavmalhotra/unb-cic-iot-dataset (verify against official files). Official source: https://www.unb.ca/cic/datasets/iotdataset-2023.html
+PRIMARY TEST BEST METHOD BY MACRO-F1: TrimmedMean
+Macro-F1: 0.6676
+Macro-AUROC: 0.9600
+Trust threshold: 0.6080
+
+OUTPUTS:
+Tables: 47
+PNG figures: 28
+PDF figures: 28
+
+IMPORTANT:
+1. Consult Table_20_Claim_Eligibility_and_Integrity_Gate.csv before manuscript writing.
+2. Synthetic smoke output is never manuscript evidence.
+3. Only independent-seed statistics in Table_18 support inferential claims.
+4. External UNSW-NB15 results are separate and never pooled with CIC-IoT-2023.
