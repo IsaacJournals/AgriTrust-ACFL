@@ -17,10 +17,10 @@ The evidence in this package supports the following claims. It does **not** show
 |---|---|
 | `AgriTrust_ACFL_Q1_v2_7_2_Colab.ipynb` | **Main notebook with all outputs.** Final execution record: every cell with its output, plus a results appendix displaying every table and figure inline. |
 | `AgriTrust_ACFL_Q1_v2_7_Colab.ipynb` | Supplementary execution log of the original long FULL_REAL computation (progress lines of the multi-hour run). |
-| `results/tables/` | 47 CSV tables (Table 00–23, 99), the source of every number in the manuscript. |
-| `results/figures/` | 28 figures, each as PNG and PDF. |
-| `results/logs/`, `MANUSCRIPT_EVIDENCE_PACK.md`, `MANUSCRIPT_RESULT_SUMMARY.txt` | Run logs and the evidence map from manuscript sections to tables and figures. |
-| `results/checkpoints/e0cc45b388bf/` | Stage checkpoints (a few MB). They let anyone reload all results in minutes, without the ~9 h recomputation. |
+| `tables/` | 47 CSV tables (Table 00–23, 99), the source of every number in the manuscript. The manuscript cites them as supplementary tables: [Table S06] is `tables/Table_06_…csv`, [Table S17b] is `tables/Table_17b_…csv`, and so on. |
+| `figures/` | 28 figures from the notebook, each as PNG and PDF. |
+| `MANUSCRIPT_EVIDENCE_PACK.md`, `MANUSCRIPT_RESULT_SUMMARY.txt` | Evidence map from manuscript sections to tables and figures, and a summary of the headline results. |
+| `checkpoints/e0cc45b388bf/` | Stage checkpoints (a few MB). They let anyone reload all results in minutes, without the ~9 h recomputation. |
 
 **Note on checkpoints.** `unsw_federated.pkl` was computed on UNSW-NB15 files whose train/test names were reversed in the Kaggle mirror (Section 3.2). It has been **removed** from this deposit; the valid UNSW results are in `unsw_federated_official_orientation.pkl`.
 
@@ -93,7 +93,7 @@ Every heavy stage is saved to `checkpoints/<RESUME_KEY>/`. If Colab disconnects:
 The resume key is fixed before any in-run setting change and includes a data fingerprint, so a changed configuration or dataset never reuses old checkpoints. For this study the key is **`e0cc45b388bf`**.
 
 ### 4.4 Reproduce the results without recomputation
-Copy `results/` (including `checkpoints/e0cc45b388bf/`) to `MyDrive/AgriTrust_Results_FULL_REAL/`, keep `RUN_MODE = 'FULL_REAL'`, and choose **Run all**. All stages load from the checkpoints, and the results appendix re-displays every table and figure.
+Copy the `tables/`, `figures/` and `checkpoints/` folders (with `checkpoints/e0cc45b388bf/`) into `MyDrive/AgriTrust_Results_FULL_REAL/`, keep `RUN_MODE = 'FULL_REAL'`, and choose **Run all**. All stages load from the checkpoints, and the results appendix re-displays every table and figure.
 
 ---
 
